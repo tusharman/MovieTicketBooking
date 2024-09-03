@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drop Down View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DropDownViewController" id="Y6W-OH-hqX" customClass="DropDownViewController" customModule="MovieTicketBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1d-tQ-3DJ">
+                                <rect key="frame" x="76" y="362" width="241" height="153"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V1d-tQ-3DJ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Voi-j9-Xvk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="V1d-tQ-3DJ" secondAttribute="bottom" constant="303" id="bvY-BV-LfF"/>
+                            <constraint firstItem="V1d-tQ-3DJ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="foR-C6-6xZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="V1d-tQ-3DJ" secondAttribute="trailing" constant="76" id="t4C-1x-B1y"/>
+                            <constraint firstItem="V1d-tQ-3DJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="303" id="u1y-v3-l0F"/>
+                            <constraint firstItem="V1d-tQ-3DJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="76" id="wRW-Iu-pEF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dropdownContainerView" destination="V1d-tQ-3DJ" id="U94-0F-Ovr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
